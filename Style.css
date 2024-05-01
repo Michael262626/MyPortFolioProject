@@ -109,10 +109,10 @@ span{
 .home-img img{
     top: 6.5rem;
     position: relative;
-    width: 20vw;
+    width: 22vw;
     height: 25vw;
     margin-left: -5%;
-    border-radius: 65%;
+    border-radius: 95%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -214,7 +214,7 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "  Frontend Designer & Backend Engineer";
+        content: "  Frontend Designer ";
     }
     21%,
     40%{
@@ -264,7 +264,7 @@ span{
     margin: 5rem 0;
 }
 .education{
-    padding: 100px 15px;
+    padding: 100px -2px;
     background: var(--second-bg-color);
 }
 .education h2{
@@ -290,4 +290,27 @@ span{
     margin-bottom: 40px;
     width: 100%;
 }
-.timeline-item::before{}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50px + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50px + 30px);
+}
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                        0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+.timeline-date{
+
+}
